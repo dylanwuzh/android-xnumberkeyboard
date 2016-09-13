@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/edit_text"
+        android:layout_marginTop="10dp"
+        android:text="Shuffle"
+        android:textAllCaps="false" />
+
+    <com.numberkeyboard.android.WNumberKeyboardView
+        android:id="@+id/view_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#b0b0b0"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@android:color/white"
+        android:keyTextColor="#000000"
+        android:shadowColor="@android:color/transparent"
+        android:shadowRadius="0"
+        app:wnkv_deleteBackgroundColor="#d2d5db"
+        app:wnkv_deleteDrawable="@drawable/keyboard_backspace"
+        app:wnkv_deleteWidth="22dp" />
+
+</RelativeLayout>
