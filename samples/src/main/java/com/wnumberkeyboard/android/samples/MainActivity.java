@@ -1,4 +1,4 @@
-package com.numberkeyboard.android.samples;
+package com.wnumberkeyboard.android.samples;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 
-import com.numberkeyboard.android.WNumberKeyboardView;
+import com.wnumberkeyboard.android.WNumberKeyboardView;
 
 /**
  * @author wuzhen

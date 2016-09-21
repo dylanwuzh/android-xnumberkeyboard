@@ -11,7 +11,7 @@ android {
     buildToolsVersion "24.0.2"
 
     defaultConfig {
-        applicationId "com.numberkeyboard.android.samples"
+        applicationId "com.wnumberkeyboard.android.samples"
         minSdkVersion 14
         targetSdkVersion 24
         versionCode 1
@@ -28,5 +28,5 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:24.2.0'
-    compile 'com.github.wuzhendev:android-wnumberkeyboard:1.0.0'
+    compile project(':wnumberkeyboard')
 }
