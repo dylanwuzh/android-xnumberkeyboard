@@ -1,4 +1,4 @@
-# android\-wnumberkeyboard
+# android\-wnumberkeyboardview
 
 自定义的数字键盘，效果如下图：
 
@@ -6,7 +6,7 @@
 
 ## Gradle
 
-[![](https://www.jitpack.io/v/wuzhendev/android-wnumberkeyboard.svg)](https://www.jitpack.io/#wuzhendev/android-wnumberkeyboard)
+[![](https://www.jitpack.io/v/wuzhendev/android-wnumberkeyboardview.svg)](https://www.jitpack.io/#wuzhendev/android-wnumberkeyboardview)
 
 ``` groovy
 repositories {
@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.wuzhendev:android-wnumberkeyboard:x.y.z'
+    compile 'com.github.wuzhendev:android-wnumberkeyboardview:x.y.z'
 }
 ```
 
@@ -67,4 +67,4 @@ limitations under the License.
 
 [1]: ./assets/1.jpg
 [2]: ./samples
-[3]: ./assets/WNumberKeyboard_Demo_v1.0.0.apk
+[3]: ./assets/WNumberKeyboardView_Demo_v1.0.0.apk
