@@ -61,7 +61,7 @@ public class WNumberKeyboardView extends KeyboardView implements KeyboardView.On
         setKeyboard(keyboard);
 
         setEnabled(true);
-        setPreviewEnabled(false);
+        setPreviewEnabled(false); // 设置按键没有点击放大镜显示的效果
         setOnKeyboardActionListener(this);
     }
 
@@ -76,7 +76,7 @@ public class WNumberKeyboardView extends KeyboardView implements KeyboardView.On
             if (key.codes[0] == KEYCODE_EMPTY) {
                 drawKeyBackground(key, canvas, mDeleteBackgroundColor);
             }
-            // 如果是右下角的删除按键，重画背景，并且绘制删除的图标
+            // 如果是右下角的删除按键，重画按键的背景，并且绘制删除图标
             else if (key.codes[0] == Keyboard.KEYCODE_DELETE) {
                 drawKeyBackground(key, canvas, mDeleteBackgroundColor);
                 drawDeleteButton(key, canvas);
@@ -144,12 +144,12 @@ public class WNumberKeyboardView extends KeyboardView implements KeyboardView.On
     @Override
     public void onKey(int primaryCode, int[] keyCodes) {
         // 处理按键的点击事件
-        // 点击删除按键
+        // 点击了删除按键
         if (primaryCode == Keyboard.KEYCODE_DELETE) {
             if (mOnKeyboardListener != null)
                 mOnKeyboardListener.onDeleteKeyEvent();
         }
-        // 点击了非左下角按键的其他按键
+        // 点击了数字按键
         else if (primaryCode != KEYCODE_EMPTY) {
             if (mOnKeyboardListener != null) {
                 mOnKeyboardListener.onInsertKeyEvent(Character.toString(
@@ -158,12 +158,7 @@ public class WNumberKeyboardView extends KeyboardView implements KeyboardView.On
         }
     }
 
-
-    //
-    // ========= 随机键盘 Start =========
-    //
-
-    // 0-9
+    // 0-9 数字的 Character 值
     private final List<Character> keyCodes = Arrays.asList('0', '1', '2', '3', '4', '5', '6', '7',
             '8', '9');
 
@@ -173,8 +168,8 @@ public class WNumberKeyboardView extends KeyboardView implements KeyboardView.On
     public void shuffleKeyboard() {
         Keyboard keyboard = getKeyboard();
         if (keyboard != null && keyboard.getKeys() != null && keyboard.getKeys().size() > 0) {
-            // 随机排序数字
-            Collections.shuffle(keyCodes);
+
+            Collections.shuffle(keyCodes); // 随机排序数字
 
             // 遍历所有的按键
             List<Keyboard.Key> keys = getKeyboard().getKeys();
@@ -190,11 +185,6 @@ public class WNumberKeyboardView extends KeyboardView implements KeyboardView.On
             setKeyboard(keyboard);
         }
     }
-
-    //
-    // ========= 随机键盘 End =========
-    //
-
 
     @Override
     public void onPress(int primaryCode) {
@@ -240,10 +230,21 @@ public class WNumberKeyboardView extends KeyboardView implements KeyboardView.On
         this.mOnKeyboardListener = listener;
     }
 
+    /**
+     * 键盘的监听事件。
+     */
     public interface IOnKeyboardListener {
 
+        /**
+         * 点击数字按键。
+         *
+         * @param text 输入的数字
+         */
         void onInsertKeyEvent(String text);
 
+        /**
+         * 点击了删除按键。
+         */
         void onDeleteKeyEvent();
     }
 }

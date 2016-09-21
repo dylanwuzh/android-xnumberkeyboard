@@ -31,7 +31,7 @@
         android:keyTextColor="#000000"
         android:shadowColor="@android:color/transparent"
         android:shadowRadius="0"
-        app:wnkv_deleteBackgroundColor="#d2d5db"
+        app:wnkv_deleteBackgroundColor="#d2d2d2"
         app:wnkv_deleteDrawable="@drawable/keyboard_backspace"
         app:wnkv_deleteWidth="22dp" />
 

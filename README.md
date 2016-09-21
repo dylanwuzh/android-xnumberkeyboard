@@ -42,12 +42,6 @@ dependencies {
 
 [Sample APK][3]
 
-## Change Log
-
-**v1.0.0【2016-09-13】:**
-
-1\. 初始化。
-
 ## Features
 
 1. 可以设置键盘的大小。
