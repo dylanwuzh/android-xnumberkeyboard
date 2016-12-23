@@ -1,4 +1,4 @@
-# android\-wnumberkeyboardview
+# android\-xnumberkeyboard
 
 自定义的数字键盘，效果如下图：
 
@@ -6,7 +6,7 @@
 
 ## Gradle
 
-[![](https://www.jitpack.io/v/wuzhendev/android-wnumberkeyboardview.svg)](https://www.jitpack.io/#wuzhendev/android-wnumberkeyboardview)
+[![](https://www.jitpack.io/v/wuzhendev/android-xnumberkeyboard.svg)](https://www.jitpack.io/#wuzhendev/android-xnumberkeyboard)
 
 ``` groovy
 repositories {
@@ -16,24 +16,24 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.wuzhendev:android-wnumberkeyboardview:x.y.z'
+    compile 'com.github.wuzhendev:android-xnumberkeyboard:x.y.z'
 }
 ```
-
+ 
 ## Attrs
 
 ``` xml
 <!-- 删除按键的图标 -->
-<attr name="wnkv_deleteDrawable" format="reference" />
+<attr name="xnkv_deleteDrawable" format="reference" />
 
 <!-- 删除按键图标的宽度 -->
-<attr name="wnkv_deleteWidth" format="dimension|reference" />
+<attr name="xnkv_deleteWidth" format="dimension|reference" />
 
 <!-- 删除按键图标的高度 -->
-<attr name="wnkv_deleteHeight" format="dimension|reference" />
+<attr name="xnkv_deleteHeight" format="dimension|reference" />
 
 <!-- 删除按键图标的颜色 -->
-<attr name="wnkv_deleteBackgroundColor" format="color|reference" />
+<attr name="xnkv_deleteBackgroundColor" format="color|reference" />
 ```
 
 ## Sample
@@ -67,4 +67,4 @@ limitations under the License.
 
 [1]: ./assets/1.jpg
 [2]: ./samples
-[3]: ./assets/WNumberKeyboardView_Demo_v1.0.0.apk
+[3]: ./assets/XNumberKeyboard_Demo_v1.0.1.apk

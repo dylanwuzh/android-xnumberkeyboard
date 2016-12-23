@@ -19,7 +19,7 @@
         android:text="Shuffle"
         android:textAllCaps="false" />
 
-    <com.wnumberkeyboard.android.WNumberKeyboardView
+    <com.xnumberkeyboard.android.XNumberKeyboardView
         android:id="@+id/view_keyboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,12 +27,12 @@
         android:background="#b0b0b0"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        android:keyBackground="@android:color/white"
+        android:keyBackground="@drawable/selector_key_background"
         android:keyTextColor="#000000"
         android:shadowColor="@android:color/transparent"
         android:shadowRadius="0"
-        app:wnkv_deleteBackgroundColor="#d2d2d2"
-        app:wnkv_deleteDrawable="@drawable/keyboard_backspace"
-        app:wnkv_deleteWidth="22dp" />
+        app:xnkv_deleteBackgroundColor="#d2d2d2"
+        app:xnkv_deleteDrawable="@mipmap/keyboard_backspace"
+        app:xnkv_deleteWidth="22dp" />
 
 </RelativeLayout>

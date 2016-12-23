@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="XNumberKeyboardView">
+
+        <!-- 删除按键的图标 -->
+        <attr name="xnkv_deleteDrawable" format="reference" />
+
+        <!-- 删除按键图标的宽度 -->
+        <attr name="xnkv_deleteWidth" format="dimension|reference" />
+
+        <!-- 删除按键图标的高度 -->
+        <attr name="xnkv_deleteHeight" format="dimension|reference" />
+
+        <!-- 删除按键图标的颜色 -->
+        <attr name="xnkv_deleteBackgroundColor" format="color|reference" />
+
+    </declare-styleable>
+
+</resources>

@@ -1,4 +1,4 @@
-package com.wnumberkeyboard.android.samples;
+package com.xnumberkeyboard.android.samples;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,16 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 
-import com.wnumberkeyboard.android.WNumberKeyboardView;
+import com.xnumberkeyboard.android.XNumberKeyboardView;
 
-/**
- * @author wuzhen
- * @version Version 1.0, 2016-09-13
- */
-public class MainActivity extends AppCompatActivity implements WNumberKeyboardView.IOnKeyboardListener {
+public class MainActivity extends AppCompatActivity implements XNumberKeyboardView.IOnKeyboardListener {
 
     EditText editText;
-    WNumberKeyboardView keyboardView;
+    XNumberKeyboardView keyboardView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -24,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements WNumberKeyboardVi
 
         editText = (EditText) findViewById(R.id.edit_text);
 
-        keyboardView = (WNumberKeyboardView) findViewById(R.id.view_keyboard);
+        keyboardView = (XNumberKeyboardView) findViewById(R.id.view_keyboard);
         keyboardView.setIOnKeyboardListener(this);
 
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {

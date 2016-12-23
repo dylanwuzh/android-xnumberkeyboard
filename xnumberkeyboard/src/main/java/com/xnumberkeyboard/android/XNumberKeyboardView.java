@@ -1,4 +1,4 @@
-package com.wnumberkeyboard.android;
+package com.xnumberkeyboard.android;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -19,9 +19,8 @@ import java.util.List;
  * 数字键盘。
  *
  * @author wuzhen
- * @version Version 1.0, 2016-09-08
  */
-public class WNumberKeyboardView extends KeyboardView implements KeyboardView.OnKeyboardActionListener {
+public class XNumberKeyboardView extends KeyboardView implements KeyboardView.OnKeyboardActionListener {
 
     // 用于区分左下角空白的按键
     private static final int KEYCODE_EMPTY = -10;
@@ -34,25 +33,25 @@ public class WNumberKeyboardView extends KeyboardView implements KeyboardView.On
 
     private IOnKeyboardListener mOnKeyboardListener;
 
-    public WNumberKeyboardView(Context context, AttributeSet attrs) {
+    public XNumberKeyboardView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs, 0);
     }
 
-    public WNumberKeyboardView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public XNumberKeyboardView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs, defStyleAttr);
     }
 
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.WNumberKeyboardView,
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.XNumberKeyboardView,
                 defStyleAttr, 0);
-        mDeleteDrawable = a.getDrawable(R.styleable.WNumberKeyboardView_wnkv_deleteDrawable);
+        mDeleteDrawable = a.getDrawable(R.styleable.XNumberKeyboardView_xnkv_deleteDrawable);
         mDeleteBackgroundColor = a.getColor(
-                R.styleable.WNumberKeyboardView_wnkv_deleteBackgroundColor, Color.TRANSPARENT);
-        mDeleteWidth = a.getDimensionPixelOffset(R.styleable.WNumberKeyboardView_wnkv_deleteWidth,
+                R.styleable.XNumberKeyboardView_xnkv_deleteBackgroundColor, Color.TRANSPARENT);
+        mDeleteWidth = a.getDimensionPixelOffset(R.styleable.XNumberKeyboardView_xnkv_deleteWidth,
                 -1);
-        mDeleteHeight = a.getDimensionPixelOffset(R.styleable.WNumberKeyboardView_wnkv_deleteHeight,
+        mDeleteHeight = a.getDimensionPixelOffset(R.styleable.XNumberKeyboardView_xnkv_deleteHeight,
                 -1);
         a.recycle();
 
