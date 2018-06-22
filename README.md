@@ -42,7 +42,7 @@ dependencies {
 
 [Sample APK][3]
 
-## Features
+## Futures
 
 1. 可以设置键盘的大小。
 2. Shuffle 带有动画效果。
