@@ -1,12 +1,12 @@
 # android\-xnumberkeyboard
 
+[![](https://www.jitpack.io/v/wuzhendev/android-xnumberkeyboard.svg)](https://www.jitpack.io/#wuzhendev/android-xnumberkeyboard)
+
 自定义的数字键盘，效果如下图：
 
 ![效果图][1]
 
 ## Gradle
-
-[![](https://www.jitpack.io/v/wuzhendev/android-xnumberkeyboard.svg)](https://www.jitpack.io/#wuzhendev/android-xnumberkeyboard)
 
 ``` groovy
 repositories {
