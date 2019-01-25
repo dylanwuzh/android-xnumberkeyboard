@@ -43,15 +43,15 @@
 
     <Row>
         <Key
-            android:codes="-10"
+            android:codes="-11"
             android:keyLabel="" />
         <Key
             android:codes="48"
             android:keyLabel="0" />
 
         <Key
-            android:codes="-5"
-            android:keyIcon="@android:color/transparent" />
+            android:codes="-12"
+            android:keyLabel=""/>
     </Row>
 
 </Keyboard>

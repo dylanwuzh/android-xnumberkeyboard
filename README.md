@@ -23,17 +23,36 @@ dependencies {
 ## Attrs
 
 ``` xml
-<!-- 删除按键的图标 -->
-<attr name="xnkv_deleteDrawable" format="reference" />
+<!--左下角按键的背景色-->
+<attr name="xnkv_blKeyBackground" format="color|reference"/>
 
-<!-- 删除按键图标的宽度 -->
-<attr name="xnkv_deleteWidth" format="dimension|reference" />
+<!--右下角按键的图标-->
+<attr name="xnkv_brKeyDrawable" format="reference"/>
 
-<!-- 删除按键图标的高度 -->
-<attr name="xnkv_deleteHeight" format="dimension|reference" />
+<!--右下角按键的背景-->
+<attr name="xnkv_brKeyBackground" format="color|reference"/>
 
-<!-- 删除按键图标的颜色 -->
-<attr name="xnkv_deleteBackgroundColor" format="color|reference" />
+<!--右下角按键图标的宽度-->
+<attr name="xnkv_brKeyDrawableWidth" format="dimension"/>
+
+<!--右下角按键图标的高度-->
+<attr name="xnkv_brKeyDrawableHeight" format="dimension"/>
+
+<attr name="android:keyTextSize"/>
+
+<attr name="android:keyTextColor"/>
+
+<!--键盘的类型-->
+<attr name="xnkv_type">
+    <!--纯数字键盘-->
+    <enum name="number" value="1"/>
+
+    <!--带小数点的数字键盘-->
+    <enum name="digit" value="2"/>
+
+    <!--输入身份证的数字键盘-->
+    <enum name="idcard" value="3"/>
+</attr>
 ```
 
 ## Sample
@@ -45,7 +64,6 @@ dependencies {
 ## Futures
 
 1. 可以设置键盘的大小。
-2. Shuffle 带有动画效果。
 
 ## License
 
@@ -65,6 +83,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-[1]: ./assets/1.jpg
+[1]: https://raw.githubusercontent.com/wuzhendev/assets/master/xnumberkeyboardview/1.jpg
 [2]: ./samples
-[3]: ./assets/XNumberKeyboard_Demo_v1.0.1.apk
+[3]: https://raw.githubusercontent.com/wuzhendev/assets/master/xnumberkeyboardview/XNumberKeyboard_Demo_v2.0.0.apk

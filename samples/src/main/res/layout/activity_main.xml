@@ -8,16 +8,64 @@
     <EditText
         android:id="@+id/edit_text"
         android:layout_width="match_parent"
-        android:layout_height="56dp" />
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp" />
 
-    <Button
-        android:id="@+id/btn"
+    <RadioGroup
+        android:id="@+id/rg_keyboard_type"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/edit_text"
-        android:layout_marginTop="10dp"
-        android:text="Shuffle"
-        android:textAllCaps="false" />
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_pure_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="纯数字键盘" />
+
+        <RadioButton
+            android:id="@+id/rb_digit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="带小数点的数字键盘" />
+
+        <RadioButton
+            android:id="@+id/rb_idcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证输入键盘" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_keyboard_type"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="Shuffle With Anim"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="Shuffle Without Anim"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
 
     <com.xnumberkeyboard.android.XNumberKeyboardView
         android:id="@+id/view_keyboard"
@@ -31,8 +79,8 @@
         android:keyTextColor="#000000"
         android:shadowColor="@android:color/transparent"
         android:shadowRadius="0"
-        app:xnkv_deleteBackgroundColor="#d2d2d2"
-        app:xnkv_deleteDrawable="@mipmap/keyboard_backspace"
-        app:xnkv_deleteWidth="22dp" />
+        app:xnkv_blKeyBackground="@color/colorKeyBlank"
+        app:xnkv_brKeyDrawable="@mipmap/keyboard_backspace"
+        app:xnkv_brKeyDrawableWidth="24dp" />
 
 </RelativeLayout>

@@ -2,19 +2,36 @@
 <resources>
 
     <declare-styleable name="XNumberKeyboardView">
+        <!--左下角按键的背景色-->
+        <attr name="xnkv_blKeyBackground" format="color|reference"/>
 
-        <!-- 删除按键的图标 -->
-        <attr name="xnkv_deleteDrawable" format="reference" />
+        <!--右下角按键的图标-->
+        <attr name="xnkv_brKeyDrawable" format="reference"/>
 
-        <!-- 删除按键图标的宽度 -->
-        <attr name="xnkv_deleteWidth" format="dimension|reference" />
+        <!--右下角按键的背景-->
+        <attr name="xnkv_brKeyBackground" format="color|reference"/>
 
-        <!-- 删除按键图标的高度 -->
-        <attr name="xnkv_deleteHeight" format="dimension|reference" />
+        <!--右下角按键图标的宽度-->
+        <attr name="xnkv_brKeyDrawableWidth" format="dimension"/>
 
-        <!-- 删除按键图标的颜色 -->
-        <attr name="xnkv_deleteBackgroundColor" format="color|reference" />
+        <!--右下角按键图标的高度-->
+        <attr name="xnkv_brKeyDrawableHeight" format="dimension"/>
 
+        <attr name="android:keyTextSize"/>
+
+        <attr name="android:keyTextColor"/>
+
+        <!--键盘的类型-->
+        <attr name="xnkv_type">
+            <!--纯数字键盘-->
+            <enum name="number" value="1"/>
+
+            <!--带小数点的数字键盘-->
+            <enum name="digit" value="2"/>
+
+            <!--输入身份证的数字键盘-->
+            <enum name="idcard" value="3"/>
+        </attr>
     </declare-styleable>
 
 </resources>
