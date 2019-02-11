@@ -66,7 +66,6 @@
             android:textAllCaps="false" />
     </LinearLayout>
 
-
     <com.xnumberkeyboard.android.XNumberKeyboardView
         android:id="@+id/view_keyboard"
         android:layout_width="match_parent"
@@ -79,6 +78,7 @@
         android:keyTextColor="#000000"
         android:shadowColor="@android:color/transparent"
         android:shadowRadius="0"
+        app:xnkv_type="number"
         app:xnkv_blKeyBackground="@color/colorKeyBlank"
         app:xnkv_brKeyDrawable="@mipmap/keyboard_backspace"
         app:xnkv_brKeyDrawableWidth="24dp" />

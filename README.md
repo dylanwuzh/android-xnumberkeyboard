@@ -2,9 +2,21 @@
 
 [![](https://www.jitpack.io/v/wuzhendev/android-xnumberkeyboard.svg)](https://www.jitpack.io/#wuzhendev/android-xnumberkeyboard)
 
-自定义的数字键盘，效果如下图：
+自定义的数字键盘，支持纯数字键盘、带小数点的数字键盘、输入身份证的数字键盘。
 
-![效果图][1]
+效果如下图：
+
+**纯数字键盘：**
+
+![效果图][3]
+
+**带小数点的数字键盘：**
+
+![效果图][4]
+
+**身份证键盘：**
+
+![效果图][5]
 
 ## Gradle
 
@@ -19,7 +31,7 @@ dependencies {
     compile 'com.github.wuzhendev:android-xnumberkeyboard:x.y.z'
 }
 ```
- 
+
 ## Attrs
 
 ``` xml
@@ -55,11 +67,41 @@ dependencies {
 </attr>
 ```
 
+## Methods
+
+**1\. 设置键盘的类型：**
+
+```java
+/**
+ * @param type
+ *         KeyboardType.number: 纯数字键盘
+ *         KeyboardType.digit: 带小数点的键盘
+ *         KeyboardType.idCard: 输入身份证的数字键盘
+ */
+XNumberKeyboardView.setKeyboardType(int type);
+```
+
+**2\. 打乱键盘顺序：**
+
+```java
+/**
+ * 随机打乱数字键盘上键位的排列顺序，带有动画。
+ */
+public void shuffleKeyboard() { }
+
+/**
+ * 随机打乱数字键盘上键位的排列顺序。
+ *
+ * @param anim 是否带有动画
+ */
+public void shuffleKeyboard(boolean anim) { }
+```
+
 ## Sample
 
-[Sample sources][2]
+[Sample sources][1]
 
-[Sample APK][3]
+[Sample APK][2]
 
 ## Futures
 
@@ -83,6 +125,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-[1]: https://raw.githubusercontent.com/wuzhendev/assets/master/xnumberkeyboardview/1.jpg
-[2]: ./samples
-[3]: https://raw.githubusercontent.com/wuzhendev/assets/master/xnumberkeyboardview/XNumberKeyboard_Demo_v2.0.0.apk
+[1]: ./samples
+[2]: https://raw.githubusercontent.com/wuzhendev/assets/master/xnumberkeyboardview/XNumberKeyboard_Demo_v2.0.0.apk
+[3]: https://raw.githubusercontent.com/wuzhendev/assets/master/xnumberkeyboardview/2.jpg
+[4]: https://raw.githubusercontent.com/wuzhendev/assets/master/xnumberkeyboardview/3.jpg
+[5]: https://raw.githubusercontent.com/wuzhendev/assets/master/xnumberkeyboardview/4.jpg
